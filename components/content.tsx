@@ -63,6 +63,7 @@ export default async function Content() {
           {tripData.map((trip) => (
             <TripCard
               key={trip.id}
+              tripId={trip.id}
               tripName={trip.tripName}
               startDestination={trip.startDestination}
               endDestination={trip.endDestination}
